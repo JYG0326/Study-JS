@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./4강.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="text"></p>
+        <button onclick="알림창버튼('','none')">닫기</button>
+    </div>
+    <button onclick="알림창버튼('1번 Alert','block')">버튼1</button>
+    <button onclick="알림창버튼('2번 Alert','block')">버튼2</button>
+</body>
+<script>
+    function 알림창버튼(num, show){
+        document.getElementById('text').innerHTML=num;
+        document.getElementById('alert').style.display=show;
+    }
+</script>
+</html>
